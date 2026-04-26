@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="#">Rafael Reichelt</a>              
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <div class="language-switch">
+                <a href="index-de.html">DE</a>
+                <span>|</span>
+                <a href="index-en.html" class="active">EN</a>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="nav-top">
+            <div class="logo">Rafael Reichelt</div>
+
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="menu-links">
+            <a href="#profile" onclick="toggleMenu()">Profile</a>
+            <a href="#experience" onclick="toggleMenu()">Experience</a>
+            <a href="#projects" onclick="toggleMenu()">Projects</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+
+            <div class="language-switch">
+                <a href="index-de.html">DE</a>
+                <span>|</span>
+                <a href="index-en.html">EN</a>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/ProfilBild.png" alt="Rafael Reichelt profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Welcome, I am</p>
+            <h1 class="title">Rafael Reichelt</h1>
+            <p class="section__text__p2">Web Developer</p>
+            <div class="btn-container">
+                <button 
+                 class="btn btn-color-2" 
+                 onclick="window.open('./assets/')"
+                 >Download CV</button>
+                 <button 
+                 class="btn btn-color-1" 
+                 onclick="location.href='./#contact'"
+                 >Contact</button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My LinkedIn profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/rafael-reichelt-0a33362b8/'">
+                <img 
+                src="./assets/github.png" 
+                alt="My Github profile" 
+                class="icon" 
+                onclick="location.href='https://github.com/rafar95'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Find out more</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="./assets/ProfilBild2.png" 
+                alt="Profile picture"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/experience.png" 
+                        alt="experience icon"
+                        class="icon"/>
+                        <h3>Experience</h3>
+                        <p>1+ years <br>Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="Education icon"
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <p>Web Development Expert - IU Akademie, <br> Learn JavaScript - Codecademy, <br> Learn Python 2 & 3 - Codecademy, <br> Self-study from various sources</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>My name is Rafael Reichelt and I program web pages, specializing in frontend web development. 
+                        I am proficient in various programming languages, the most secure being HTML, CSS and JavaScript. 
+                        My preferred program library is React.js and I prefer to use Tailwind CSS as my framework. 
+                        Depending on the type of project I can use various AI programs to increase my efficiency. 
+                        Even though most of my work is writing code, I also enjoy the design part of a project. Feel free to check out some of my latest projects below.</p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Discover my</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>HTML/JSX</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Java</h3>
+                                <p>Basic knowledge</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Basic knowledge</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Python</h3>
+                                <p>Basic knowledge</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Applications</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>VS Code</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Webflow</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Relume</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Eclipse IDE</h3>
+                                <p>Basic knowledge</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Spline</h3>
+                                <p>Basic knowledge</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frameworks & Libraries</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>React</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Tailwind</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Take a look at my most recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container-project color-container">
+                    <div class="article-container">
+                        <img 
+                        src="./assets/Brainwave.png" 
+                        alt="Project 1" 
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Brainwave AI Chatting</h2>
+                    <p class="ki-text">React App with Tailwind</p>
+                    <div class="button-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/rafar95/React_Project'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://brainwave-by-rafael.de/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    </div>
+                <div class="details-container-project color-container">
+                    <div class="article-container">
+                        <img 
+                        src="./assets/NexGenPayments.png" 
+                        alt="Project 1" 
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Next <br>Gen<br> Payments</h2>
+                    <p class="ki-text">React App with Tailwind</p>
+                    <div class="button-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/rafar95/React_Project'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://rafael-reichelt.de/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    </div>
+                <div class="details-container-project color-container">
+                    <div class="article-container">
+                        <img 
+                        src="./assets/evolectra.webp" 
+                        alt="Project 1" 
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Evolectra Electric Vehicles</h2>
+                    <p class="ki-text">Relume AI & Webflow</p>
+                    <div class="button-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/rafar95/Relume-AI-PC-Shop'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://evolectra.de/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    </div>
+                <div class="details-container-project color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/Shop.webp" 
+                    alt="Project 1" 
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Ultra Gaming PC Shop</h2>
+                <p class="ki-text">Relume AI & Webflow</p>
+                <div class="button-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/rafar95/Relume-AI-PC-Shop'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://ultragaming.shop/'">
+                        Live Demo
+                    </button>
+                </div>
+                </div>
+                <div class="details-container-project color-container">
+                    <div class="article-container">
+                        <img 
+                        src="./assets/Kebab.webp" 
+                        alt="Project 1" 
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Chicco's Döner Webseite</h2>
+                    <p class="ki-text">HTML, CSS & JS</p>
+                    <div class="button-container">
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://github.com/rafar95/doener-shop'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" 
+                        onclick="location.href='https://test-doener.netlify.app/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container-project color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/Astro.jpg" 
+                    alt="Project 2" 
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Slideshow Cards Animation</h2>
+                <p class="animation">HTML & CSS</p>
+                <div class="button-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/rafar95/Slide-Show-Website'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://slideshow-project.netlify.app/'">
+                        Live Demo
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in touch</p>
+        <h1 class="title">Contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png"
+                alt="Email icon" 
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:examplemail@gmail.com">rafael.reichelt@protonmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png"
+                alt="LinkedIn icon" 
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/rafael-reichelt-0a33362b8/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Profile</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Rafael Reichelt - All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>

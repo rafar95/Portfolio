@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Mein Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Rafael Reichelt</div>
-        <div>
+        <div class="nav-left">
+            <div class="logo">
+                <a href="#">Rafael Reichelt</a>            
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <div class="language-switch">
+                <a href="index-de.html" class="active">DE</a>
+                <span>|</span>
+                <a href="index-en.html">EN</a>
+            </div>
+        </div>
+
+        <div class="nav-right">
             <ul class="nav-links">
-                <li><a href="#about">Profil</a></li>
+                <li><a href="#profile">Profil</a></li>
                 <li><a href="#experience">Erfahrung</a></li>
                 <li><a href="#projects">Projekte</a></li>
                 <li><a href="#contact">Kontakt</a></li>
@@ -20,18 +33,26 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Rafael Reichelt</div>
-        <div class="hamburger-menu">
+        <div class="nav-top">
+            <div class="logo">Rafael Reichelt</div>
+
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">Profil</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Erfahrung</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projekte</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+        </div>
+
+        <div class="menu-links">
+            <a href="#profile" onclick="toggleMenu()">Profil</a>
+            <a href="#experience" onclick="toggleMenu()">Erfahrung</a>
+            <a href="#projects" onclick="toggleMenu()">Projekte</a>
+            <a href="#contact" onclick="toggleMenu()">Kontakt</a>
+
+            <div class="language-switch">
+                <a href="index-de.html">DE</a>
+                <span>|</span>
+                <a href="index-en.html">EN</a>
             </div>
         </div>
     </nav>
@@ -69,7 +90,7 @@
     </section>
     <section id="about">
         <p class="section__text__p1">Erfahren Sie mehr</p>
-        <h1 class="title">Über mich</h1>
+        <h1 class="title">über mich</h1>
         <div class="section-container">
             <div class="section__pic-container">
                 <img 
