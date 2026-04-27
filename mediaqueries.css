@@ -40,6 +40,25 @@
     }
 }
 
+@media (max-width: 768px) {
+
+  #experience .article-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* 🔥 HIER IST DER WICHTIGE TEIL */
+  #experience article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #experience article div {
+    text-align: center;
+  }
+
+}
+
 @media screen and (max-width: 600px) {
     #contact, footer {
         height: 40vh;
