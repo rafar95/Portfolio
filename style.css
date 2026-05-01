@@ -389,6 +389,23 @@ section {
     text-align: center;
 }
 
+.details-container h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.job {
+  color: rgb(99, 99, 99);
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.date {
+  color: rgb(120, 120, 120);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
 .details-container-project {
     padding: 1.5rem;
     flex: 1;
