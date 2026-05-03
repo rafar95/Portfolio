@@ -122,3 +122,12 @@
         text-align: justify;
     }
 }
+
+@media screen and (min-width: 2560px) {
+    .title {
+        margin-bottom: 4rem;
+    }
+    .section-container {
+        margin-top: -10rem;
+    }
+}

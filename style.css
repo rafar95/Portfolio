@@ -354,6 +354,11 @@ section {
     text-align: center;
 }
 
+.title_name {
+    font-size: 3rem;
+    text-align: center;
+}
+
 #socials-container {
     display: flex;
     justify-content: center;
